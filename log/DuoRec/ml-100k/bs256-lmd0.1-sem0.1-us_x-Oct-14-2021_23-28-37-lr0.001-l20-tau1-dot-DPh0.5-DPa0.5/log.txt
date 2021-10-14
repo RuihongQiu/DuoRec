@@ -1,0 +1,188 @@
+Thu 14 Oct 2021 23:28:37 INFO  
+[1;35mGeneral Hyper Parameters:
+[0m[1;36mgpu_id[0m =[1;33m 0[0m
+[1;36muse_gpu[0m =[1;33m True[0m
+[1;36mseed[0m =[1;33m 2020[0m
+[1;36mstate[0m =[1;33m INFO[0m
+[1;36mreproducibility[0m =[1;33m True[0m
+[1;36mdata_path[0m =[1;33m /home/test/Downloads/DuoRec/recbole/config/../dataset_example/ml-100k[0m
+[1;36mshow_progress[0m =[1;33m True[0m
+
+[1;35mTraining Hyper Parameters:
+[0m[1;36mcheckpoint_dir[0m =[1;33m saved[0m
+[1;36mepochs[0m =[1;33m 50[0m
+[1;36mtrain_batch_size[0m =[1;33m 256[0m
+[1;36mlearner[0m =[1;33m adam[0m
+[1;36mlearning_rate[0m =[1;33m 0.001[0m
+[1;36mtraining_neg_sample_num[0m =[1;33m 0[0m
+[1;36mtraining_neg_sample_distribution[0m =[1;33m uniform[0m
+[1;36meval_step[0m =[1;33m 1[0m
+[1;36mstopping_step[0m =[1;33m 10[0m
+[1;36mclip_grad_norm[0m =[1;33m None[0m
+[1;36mweight_decay[0m =[1;33m 0[0m
+[1;36mdraw_loss_pic[0m =[1;33m False[0m
+[1;36mloss_decimal_place[0m =[1;33m 4[0m
+
+[1;35mEvaluation Hyper Parameters:
+[0m[1;36meval_setting[0m =[1;33m TO_LS,full[0m
+[1;36mgroup_by_user[0m =[1;33m True[0m
+[1;36msplit_ratio[0m =[1;33m [0.8, 0.1, 0.1][0m
+[1;36mleave_one_num[0m =[1;33m 2[0m
+[1;36mreal_time_process[0m =[1;33m False[0m
+[1;36mmetrics[0m =[1;33m ['Recall', 'MRR', 'NDCG', 'Precision'][0m
+[1;36mtopk[0m =[1;33m [5, 10, 20, 50][0m
+[1;36mvalid_metric[0m =[1;33m MRR@10[0m
+[1;36meval_batch_size[0m =[1;33m 256[0m
+[1;36mmetric_decimal_place[0m =[1;33m 4[0m
+
+[1;35mDataset Hyper Parameters:
+[0m[1;36mfield_separator[0m =[1;33m 	[0m
+[1;36mseq_separator[0m =[1;33m  [0m
+[1;36mUSER_ID_FIELD[0m =[1;33m user_id[0m
+[1;36mITEM_ID_FIELD[0m =[1;33m item_id[0m
+[1;36mRATING_FIELD[0m =[1;33m rating[0m
+[1;36mTIME_FIELD[0m =[1;33m timestamp[0m
+[1;36mseq_len[0m =[1;33m None[0m
+[1;36mLABEL_FIELD[0m =[1;33m label[0m
+[1;36mthreshold[0m =[1;33m None[0m
+[1;36mNEG_PREFIX[0m =[1;33m neg_[0m
+[1;36mload_col[0m =[1;33m {'inter': ['user_id', 'item_id', 'rating', 'timestamp']}[0m
+[1;36munload_col[0m =[1;33m None[0m
+[1;36munused_col[0m =[1;33m None[0m
+[1;36madditional_feat_suffix[0m =[1;33m None[0m
+[1;36mrm_dup_inter[0m =[1;33m None[0m
+[1;36mlowest_val[0m =[1;33m None[0m
+[1;36mhighest_val[0m =[1;33m None[0m
+[1;36mequal_val[0m =[1;33m None[0m
+[1;36mnot_equal_val[0m =[1;33m None[0m
+[1;36mfilter_inter_by_user_or_item[0m =[1;33m True[0m
+[1;36mmax_user_inter_num[0m =[1;33m None[0m
+[1;36mmin_user_inter_num[0m =[1;33m 5[0m
+[1;36mmax_item_inter_num[0m =[1;33m None[0m
+[1;36mmin_item_inter_num[0m =[1;33m 5[0m
+[1;36mfields_in_same_space[0m =[1;33m None[0m
+[1;36mpreload_weight[0m =[1;33m None[0m
+[1;36mnormalize_field[0m =[1;33m None[0m
+[1;36mnormalize_all[0m =[1;33m True[0m
+[1;36mITEM_LIST_LENGTH_FIELD[0m =[1;33m item_length[0m
+[1;36mLIST_SUFFIX[0m =[1;33m _list[0m
+[1;36mMAX_ITEM_LIST_LENGTH[0m =[1;33m 50[0m
+[1;36mPOSITION_FIELD[0m =[1;33m position_id[0m
+[1;36mHEAD_ENTITY_ID_FIELD[0m =[1;33m head_id[0m
+[1;36mTAIL_ENTITY_ID_FIELD[0m =[1;33m tail_id[0m
+[1;36mRELATION_ID_FIELD[0m =[1;33m relation_id[0m
+[1;36mENTITY_ID_FIELD[0m =[1;33m entity_id[0m
+
+[1;35mOther Hyper Parameters: 
+[0m[1;36mvalid_metric_bigger[0m = [1;33mTrue[0m
+[1;36mn_layers[0m = [1;33m2[0m
+[1;36mn_heads[0m = [1;33m2[0m
+[1;36mhidden_size[0m = [1;33m64[0m
+[1;36minner_size[0m = [1;33m256[0m
+[1;36mhidden_dropout_prob[0m = [1;33m0.5[0m
+[1;36mattn_dropout_prob[0m = [1;33m0.5[0m
+[1;36mhidden_act[0m = [1;33mgelu[0m
+[1;36mlayer_norm_eps[0m = [1;33m1e-12[0m
+[1;36minitializer_range[0m = [1;33m0.02[0m
+[1;36mloss_type[0m = [1;33mCE[0m
+[1;36mlmd[0m = [1;33m0.1[0m
+[1;36mlmd_sem[0m = [1;33m0.1[0m
+[1;36mSSL_AUG[0m = [1;33mDuoRec[0m
+[1;36mSOURCE_ID_FIELD[0m = [1;33msource_id[0m
+[1;36mTARGET_ID_FIELD[0m = [1;33mtarget_id[0m
+[1;36mbenchmark_filename[0m = [1;33mNone[0m
+[1;36mMODEL_TYPE[0m = [1;33mModelType.SEQUENTIAL[0m
+[1;36mlog_root[0m = [1;33m./log/[0m
+[1;36mtau[0m = [1;33m1[0m
+[1;36mcontrast[0m = [1;33mus_x[0m
+[1;36msim[0m = [1;33mdot[0m
+[1;36mMODEL_INPUT_TYPE[0m = [1;33mInputType.POINTWISE[0m
+[1;36meval_type[0m = [1;33mEvaluatorType.RANKING[0m
+[1;36mdevice[0m = [1;33mcuda[0m
+[1;36mtrain_neg_sample_args[0m = [1;33m{'strategy': 'none'}[0m
+[1;36mlog_dir[0m = [1;33m/home/test/Downloads/DuoRec/log/DuoRec/ml-100k/bs256-lmd0.1-sem0.1-us_x-Oct-14-2021_23-28-37-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5[0m
+
+
+Thu 14 Oct 2021 23:28:37 INFO  [1;35mml-100k[0m
+[1;34mThe number of users[0m: 944
+[1;34mAverage actions of users[0m: 105.28844114528101
+[1;34mThe number of items[0m: 1350
+[1;34mAverage actions of items[0m: 73.6004447739066
+[1;34mThe number of inters[0m: 99287
+[1;34mThe sparsity of the dataset[0m: 92.20911801632141%
+[1;34mRemain Fields[0m: ['user_id', 'item_id', 'rating', 'timestamp']
+Thu 14 Oct 2021 23:28:45 INFO  [1;35mBuild[0m[1;33m [SequentialDataLoader][0m for [1;33m[train][0m with format [1;33m[InputType.POINTWISE][0m
+Thu 14 Oct 2021 23:28:45 INFO  [1;35m[train][0m[1;33m No Negative Sampling[0m
+Thu 14 Oct 2021 23:28:45 INFO  [1;35m[train][0m[1;36m batch_size[0m = [1;33m[256][0m, [1;36mshuffle[0m = [1;33m[True]
+[0m
+Thu 14 Oct 2021 23:28:48 INFO  [1;35mBuild[0m[1;33m [SequentialFullDataLoader][0m for [1;33m[evaluation][0m with format [1;33m[InputType.POINTWISE][0m
+Thu 14 Oct 2021 23:28:48 INFO  [1;35mEvaluation Setting:[0m
+	[1;34mGroup by[0m user_id
+	[1;34mOrdering[0m: {'strategy': 'by', 'field': 'timestamp', 'ascending': True}
+	[1;34mSplitting[0m: {'strategy': 'loo', 'leave_one_num': 2}
+	[1;34mNegative Sampling[0m: {'strategy': 'full', 'distribution': 'uniform'}
+Thu 14 Oct 2021 23:28:48 INFO  [1;35m[evaluation][0m[1;36m batch_size[0m = [1;33m[256][0m, [1;36mshuffle[0m = [1;33m[False]
+[0m
+Thu 14 Oct 2021 23:28:50 INFO  DuoRec(
+  (item_embedding): Embedding(1350, 64, padding_idx=0)
+  (position_embedding): Embedding(50, 64)
+  (trm_encoder): TransformerEncoder(
+    (layer): ModuleList(
+      (0): TransformerLayer(
+        (multi_head_attention): MultiHeadAttention(
+          (query): Linear(in_features=64, out_features=64, bias=True)
+          (key): Linear(in_features=64, out_features=64, bias=True)
+          (value): Linear(in_features=64, out_features=64, bias=True)
+          (attn_dropout): Dropout(p=0.5, inplace=False)
+          (dense): Linear(in_features=64, out_features=64, bias=True)
+          (LayerNorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+          (out_dropout): Dropout(p=0.5, inplace=False)
+        )
+        (feed_forward): FeedForward(
+          (dense_1): Linear(in_features=64, out_features=256, bias=True)
+          (dense_2): Linear(in_features=256, out_features=64, bias=True)
+          (LayerNorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.5, inplace=False)
+        )
+      )
+      (1): TransformerLayer(
+        (multi_head_attention): MultiHeadAttention(
+          (query): Linear(in_features=64, out_features=64, bias=True)
+          (key): Linear(in_features=64, out_features=64, bias=True)
+          (value): Linear(in_features=64, out_features=64, bias=True)
+          (attn_dropout): Dropout(p=0.5, inplace=False)
+          (dense): Linear(in_features=64, out_features=64, bias=True)
+          (LayerNorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+          (out_dropout): Dropout(p=0.5, inplace=False)
+        )
+        (feed_forward): FeedForward(
+          (dense_1): Linear(in_features=64, out_features=256, bias=True)
+          (dense_2): Linear(in_features=256, out_features=64, bias=True)
+          (LayerNorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.5, inplace=False)
+        )
+      )
+    )
+  )
+  (LayerNorm): LayerNorm((64,), eps=1e-12, elementwise_affine=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (loss_fct): CrossEntropyLoss()
+  (aug_nce_fct): CrossEntropyLoss()
+  (sem_aug_nce_fct): CrossEntropyLoss()
+)[1;34m
+Trainable parameters[0m: 189696
+Thu 14 Oct 2021 23:29:06 INFO  [1;32mepoch 0 training[0m [[1;34mtime[0m: 15.43s, [1;34mtrain loss[0m: 2844.9462]
+Thu 14 Oct 2021 23:29:06 INFO  [1;32mepoch 0 evaluating[0m [[1;34mtime[0m: 0.03s, [1;34mvalid_score[0m: 0.010500]
+Thu 14 Oct 2021 23:29:06 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0201    recall@10 : 0.0329    recall@20 : 0.0626    recall@50 : 0.1485    mrr@5 : 0.0087    mrr@10 : 0.0105    mrr@20 : 0.0126    mrr@50 : 0.0152    ndcg@5 : 0.0115    ndcg@10 : 0.0157    ndcg@20 : 0.0233    ndcg@50 : 0.0401    precision@5 : 0.004    precision@10 : 0.0033    precision@20 : 0.0031    precision@50 : 0.003    
+Thu 14 Oct 2021 23:29:06 INFO  [1;34mSaving current best[0m: /home/test/Downloads/DuoRec/log/DuoRec/ml-100k/bs256-lmd0.1-sem0.1-us_x-Oct-14-2021_23-28-37-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5/model.pth
+Thu 14 Oct 2021 23:29:22 INFO  [1;32mepoch 1 training[0m [[1;34mtime[0m: 16.51s, [1;34mtrain loss[0m: 2717.3560]
+Thu 14 Oct 2021 23:29:22 INFO  [1;32mepoch 1 evaluating[0m [[1;34mtime[0m: 0.02s, [1;34mvalid_score[0m: 0.018100]
+Thu 14 Oct 2021 23:29:22 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0308    recall@10 : 0.0583    recall@20 : 0.123    recall@50 : 0.2672    mrr@5 : 0.0144    mrr@10 : 0.0181    mrr@20 : 0.0226    mrr@50 : 0.0271    ndcg@5 : 0.0185    ndcg@10 : 0.0273    ndcg@20 : 0.0438    ndcg@50 : 0.0721    precision@5 : 0.0062    precision@10 : 0.0058    precision@20 : 0.0062    precision@50 : 0.0053    
+Thu 14 Oct 2021 23:29:22 INFO  [1;34mSaving current best[0m: /home/test/Downloads/DuoRec/log/DuoRec/ml-100k/bs256-lmd0.1-sem0.1-us_x-Oct-14-2021_23-28-37-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5/model.pth
+Thu 14 Oct 2021 23:29:39 INFO  [1;32mepoch 2 training[0m [[1;34mtime[0m: 16.67s, [1;34mtrain loss[0m: 2629.9036]
+Thu 14 Oct 2021 23:29:39 INFO  [1;32mepoch 2 evaluating[0m [[1;34mtime[0m: 0.02s, [1;34mvalid_score[0m: 0.025900]
+Thu 14 Oct 2021 23:29:39 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0424    recall@10 : 0.088    recall@20 : 0.1569    recall@50 : 0.333    mrr@5 : 0.0198    mrr@10 : 0.0259    mrr@20 : 0.0306    mrr@50 : 0.0361    ndcg@5 : 0.0254    ndcg@10 : 0.0402    ndcg@20 : 0.0574    ndcg@50 : 0.0922    precision@5 : 0.0085    precision@10 : 0.0088    precision@20 : 0.0078    precision@50 : 0.0067    
+Thu 14 Oct 2021 23:29:39 INFO  [1;34mSaving current best[0m: /home/test/Downloads/DuoRec/log/DuoRec/ml-100k/bs256-lmd0.1-sem0.1-us_x-Oct-14-2021_23-28-37-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5/model.pth
