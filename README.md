@@ -52,5 +52,7 @@ If you find this repo useful, please cite
 
 We have also implemented `CL4SRec`, [Contrastive Learning for Sequential Recommendation](https://arxiv.org/abs/2010.14395). Change the `--model="DuoRec"` into `--model="CL4SRec"` in the `duorec.sh` file to run `CL4SRec`.
 
+Our another sequential recommender model `MMInfoRec`, [Memory Augmented Multi-Instance Contrastive Predictive Coding for Sequential Recommendation](https://arxiv.org/abs/2109.00368) at ICDM 2021 is also available on GitHub, [MMInfoRec](https://github.com/RuihongQiu/MMInfoRec).
+
 # Credit
 This repo is based on [RecBole](https://github.com/RUCAIBox/RecBole).
